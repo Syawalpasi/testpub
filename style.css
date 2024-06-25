@@ -1,0 +1,271 @@
+.body{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-top: 56px; /* Adjust this if your navbar height is different */
+}
+
+.navbar-nav .nav-link {
+    color: teal;
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+    margin-right: 15px; /* Adjust the value as needed */
+  }
+  
+  .navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .navbar-nav .nav-link.active {
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  
+  .hero-section {
+    background: rgb(6, 147, 154);
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+    padding: 0 15px;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .hero-title1 {
+    font-size: 2.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    color: teal;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .hero-button:hover, .hero-button:focus {
+    background-color: teal;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1.25rem;
+    }
+  
+    .hero-button {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+  
+    .hero-button {
+      font-size: 0.875rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  .scaling-image {
+    transition: transform 2s ease; /* Smooth transition for scaling */
+}
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+    .hero-button {
+        font-size: 1rem;
+    }
+}
+  
+.responsive-image {
+    width: 100%;
+    max-width: 65px; /* Anda dapat mengubah nilai ini sesuai kebutuhan */
+    height: auto; /* Mempertahankan aspek rasio gambar */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.card-container .card {
+  display: none;
+}
+.card-container .card.visible {
+  display: block;
+}
+
+.gallery-item {
+  margin-bottom: 30px;
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.location-frame {
+  position: relative;
+  padding-bottom: 42%; /* Change aspect ratio to make it smaller */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  max-width: 1200px; /* Limit the maximum width */
+  margin-left: auto;
+  margin-right: auto; /* Center the frame */
+}
+.location-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+.social-media {
+  flex: 1;
+  text-align: left;
+}
+
+.instagram-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.license-info {
+  flex: 1;
+  text-align: right;
+}
+
+.license-info p {
+  margin: 5px 0;
+}
+
+.license-info a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.license-info a:hover {
+  color: #ddd;
+}
+
+#judul1{
+  color: rgb(22, 151, 121);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#judul2{
+  color: black;
+}
+
+
+/* Add this CSS to your stylesheet */
+
+.img-container {
+  overflow: hidden;
+}
+
+.img-container img {
+  transition: transform 0.3s ease;
+  width: 100%; /* Ensure the image takes the full width of the container */
+}
+
+.img-container img:hover {
+  transform: scale(1.1); /* Slightly increase the size of the image on hover */
+}
+ 
+.footer{
+  background-color:rgb(4, 94, 99);
+}
+
+.btn{
+  background-color: aqua;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  color: white;
+  background-color: teal;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover, .hero-button:focus {
+  background-color: white;
+  color: teal;
+  border-style: ridge;
+  border-color: teal;
+}
+
+.accordion-header {
+  background-color: teal;
+  color: white;
+}
